@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./src/index.js" type="module"></script>
+    <title>Frontend Mentor | Product Preview Card</title>
+  </head>
+  <body class="flex min-h-screen items-center justify-center bg-cream px-4">
+    <h1 class="sr-only">Product Preview Card</h1>
+    <main
+      id="card"
+      class="max-w-[21.4375rem] overflow-hidden rounded-xl bg-white shadow-lg sm:grid sm:max-w-[37.5rem] sm:grid-cols-2"
+    >
+      <picture>
+        <source
+          media="(min-width: 600px)"
+          srcset="./src/images/image-product-desktop.jpg"
+        />
+        <img src="./src/images/image-product-mobile.jpg" alt="product image" />
+      </picture>
+      <div id="card-content" class="p-6 sm:p-8">
+        <p
+          id="card-overline"
+          class="mb-3 text-xs uppercase tracking-overline text-gray sm:mb-5"
+        >
+          perfume
+        </p>
+        <h2 id="card-heading" class="mb-4 font-serif text-lg text-blue sm:mb-6">
+          Gabrielle Essence Eau De Parfum
+        </h2>
+        <p id="card-caption" class="mb-6 text-base text-gray sm:mb-[30px]">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div id="card-prices" class="mb-5 flex items-center gap-6 sm:mb-[30px]">
+          <span id="prices-current" class="font-serif text-lg text-green-400"
+            >$149.99</span
+          >
+          <del id="prices-previous" class="text-base text-gray">$169.99</del>
+        </div>
+        <button
+          id="button__add-to-cart"
+          class="flex h-12 w-full items-center justify-center gap-3 rounded-lg bg-green-400 text-base font-bold text-white"
+        >
+          <img src="./src/images/icon-cart.svg" alt="" />
+          Add to Cart
+        </button>
+      </div>
+    </main>
+
+    <!-- $149.99 $169.99 Add to Cart -->
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
